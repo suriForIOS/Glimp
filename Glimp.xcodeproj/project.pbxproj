@@ -1,0 +1,743 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7AC96F842A4145EA00DF0E4C /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F832A4145EA00DF0E4C /* UIColor+Extension.swift */; };
+		7AC96F862A414F4800DF0E4C /* ProgramCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F852A414F4800DF0E4C /* ProgramCollectionViewCell.swift */; };
+		7AC96F882A42E53900DF0E4C /* SectionDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F872A42E53900DF0E4C /* SectionDataModel.swift */; };
+		7AC96F8A2A42E55000DF0E4C /* RowDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F892A42E55000DF0E4C /* RowDataModel.swift */; };
+		7AC96F8C2A42E57F00DF0E4C /* HeaderSlotDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F8B2A42E57F00DF0E4C /* HeaderSlotDataModel.swift */; };
+		7AC96F912A42E8A400DF0E4C /* HomeRouterInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F902A42E8A400DF0E4C /* HomeRouterInOut.swift */; };
+		7AC96F932A42EDD600DF0E4C /* CustomCollectionViewLayoutPrototcol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F922A42EDD600DF0E4C /* CustomCollectionViewLayoutPrototcol.swift */; };
+		7AC96F952A42EE1200DF0E4C /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC96F942A42EE1200DF0E4C /* CustomCollectionViewLayout.swift */; };
+		7ACEBD3C2A3E08AD00D90928 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD3B2A3E08AD00D90928 /* AppDelegate.swift */; };
+		7ACEBD432A3E08AE00D90928 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEBD422A3E08AE00D90928 /* Assets.xcassets */; };
+		7ACEBD462A3E08AE00D90928 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7ACEBD442A3E08AE00D90928 /* LaunchScreen.storyboard */; };
+		7ACEBD502A3E08AE00D90928 /* GlimpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD4F2A3E08AE00D90928 /* GlimpTests.swift */; };
+		7ACEBD5A2A3E08AE00D90928 /* GlimpUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD592A3E08AE00D90928 /* GlimpUITests.swift */; };
+		7ACEBD5C2A3E08AE00D90928 /* GlimpUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD5B2A3E08AE00D90928 /* GlimpUITestsLaunchTests.swift */; };
+		7ACEBD6D2A3E0E7600D90928 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD692A3E0E7600D90928 /* APIManager.swift */; };
+		7ACEBD702A3E0E7600D90928 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD6C2A3E0E7600D90928 /* Endpoints.swift */; };
+		7ACEBD732A3E0F1A00D90928 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD722A3E0F1A00D90928 /* Channel.swift */; };
+		7ACEBD752A3E0F5100D90928 /* Program.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD742A3E0F5100D90928 /* Program.swift */; };
+		7ACEBD792A3E102C00D90928 /* HomeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD782A3E102C00D90928 /* HomeInteractor.swift */; };
+		7ACEBD7C2A3E105B00D90928 /* HomePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD7B2A3E105B00D90928 /* HomePresenter.swift */; };
+		7ACEBD7E2A3E109E00D90928 /* HomeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD7D2A3E109E00D90928 /* HomeRouter.swift */; };
+		7ACEBD822A3E10D300D90928 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD812A3E10D300D90928 /* HomeViewController.swift */; };
+		7ACEBD842A3E12BE00D90928 /* HomeInteractorInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD832A3E12BE00D90928 /* HomeInteractorInOut.swift */; };
+		7ACEBD862A3E12E800D90928 /* HomePresenterInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD852A3E12E800D90928 /* HomePresenterInOut.swift */; };
+		7ACEBD882A3E131300D90928 /* HomeViewInOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD872A3E131300D90928 /* HomeViewInOut.swift */; };
+		7ACEBD8B2A3E155500D90928 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD8A2A3E155500D90928 /* HomeService.swift */; };
+		7ACEBD902A3F1D5700D90928 /* TimeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACEBD8F2A3F1D5700D90928 /* TimeCollectionViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7ACEBD4C2A3E08AE00D90928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACEBD302A3E08AD00D90928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACEBD372A3E08AD00D90928;
+			remoteInfo = Glimp;
+		};
+		7ACEBD562A3E08AE00D90928 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7ACEBD302A3E08AD00D90928 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7ACEBD372A3E08AD00D90928;
+			remoteInfo = Glimp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7AC96F832A4145EA00DF0E4C /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		7AC96F852A414F4800DF0E4C /* ProgramCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgramCollectionViewCell.swift; sourceTree = "<group>"; };
+		7AC96F872A42E53900DF0E4C /* SectionDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDataModel.swift; sourceTree = "<group>"; };
+		7AC96F892A42E55000DF0E4C /* RowDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowDataModel.swift; sourceTree = "<group>"; };
+		7AC96F8B2A42E57F00DF0E4C /* HeaderSlotDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderSlotDataModel.swift; sourceTree = "<group>"; };
+		7AC96F902A42E8A400DF0E4C /* HomeRouterInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouterInOut.swift; sourceTree = "<group>"; };
+		7AC96F922A42EDD600DF0E4C /* CustomCollectionViewLayoutPrototcol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayoutPrototcol.swift; sourceTree = "<group>"; };
+		7AC96F942A42EE1200DF0E4C /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		7ACEBD382A3E08AD00D90928 /* Glimp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glimp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACEBD3B2A3E08AD00D90928 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7ACEBD422A3E08AE00D90928 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7ACEBD452A3E08AE00D90928 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7ACEBD4B2A3E08AE00D90928 /* GlimpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlimpTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACEBD4F2A3E08AE00D90928 /* GlimpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpTests.swift; sourceTree = "<group>"; };
+		7ACEBD552A3E08AE00D90928 /* GlimpUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlimpUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7ACEBD592A3E08AE00D90928 /* GlimpUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpUITests.swift; sourceTree = "<group>"; };
+		7ACEBD5B2A3E08AE00D90928 /* GlimpUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlimpUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7ACEBD692A3E0E7600D90928 /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		7ACEBD6C2A3E0E7600D90928 /* Endpoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		7ACEBD722A3E0F1A00D90928 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		7ACEBD742A3E0F5100D90928 /* Program.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Program.swift; sourceTree = "<group>"; };
+		7ACEBD782A3E102C00D90928 /* HomeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractor.swift; sourceTree = "<group>"; };
+		7ACEBD7B2A3E105B00D90928 /* HomePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenter.swift; sourceTree = "<group>"; };
+		7ACEBD7D2A3E109E00D90928 /* HomeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeRouter.swift; sourceTree = "<group>"; };
+		7ACEBD812A3E10D300D90928 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		7ACEBD832A3E12BE00D90928 /* HomeInteractorInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeInteractorInOut.swift; sourceTree = "<group>"; };
+		7ACEBD852A3E12E800D90928 /* HomePresenterInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePresenterInOut.swift; sourceTree = "<group>"; };
+		7ACEBD872A3E131300D90928 /* HomeViewInOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInOut.swift; sourceTree = "<group>"; };
+		7ACEBD8A2A3E155500D90928 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
+		7ACEBD8F2A3F1D5700D90928 /* TimeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeCollectionViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7ACEBD352A3E08AD00D90928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACEBD482A3E08AE00D90928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACEBD522A3E08AE00D90928 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7AC96F822A4145D400DF0E4C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7AC96F832A4145EA00DF0E4C /* UIColor+Extension.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7ACEBD2F2A3E08AD00D90928 = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD3A2A3E08AD00D90928 /* Glimp */,
+				7ACEBD4E2A3E08AE00D90928 /* GlimpTests */,
+				7ACEBD582A3E08AE00D90928 /* GlimpUITests */,
+				7ACEBD392A3E08AD00D90928 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7ACEBD392A3E08AD00D90928 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD382A3E08AD00D90928 /* Glimp.app */,
+				7ACEBD4B2A3E08AE00D90928 /* GlimpTests.xctest */,
+				7ACEBD552A3E08AE00D90928 /* GlimpUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7ACEBD3A2A3E08AD00D90928 /* Glimp */ = {
+			isa = PBXGroup;
+			children = (
+				7AC96F822A4145D400DF0E4C /* Resources */,
+				7ACEBD892A3E153D00D90928 /* Services */,
+				7ACEBD762A3E0FFB00D90928 /* HomeModule */,
+				7ACEBD682A3E0E5C00D90928 /* Network */,
+				7ACEBD3B2A3E08AD00D90928 /* AppDelegate.swift */,
+				7ACEBD422A3E08AE00D90928 /* Assets.xcassets */,
+				7ACEBD442A3E08AE00D90928 /* LaunchScreen.storyboard */,
+			);
+			path = Glimp;
+			sourceTree = "<group>";
+		};
+		7ACEBD4E2A3E08AE00D90928 /* GlimpTests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD4F2A3E08AE00D90928 /* GlimpTests.swift */,
+			);
+			path = GlimpTests;
+			sourceTree = "<group>";
+		};
+		7ACEBD582A3E08AE00D90928 /* GlimpUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD592A3E08AE00D90928 /* GlimpUITests.swift */,
+				7ACEBD5B2A3E08AE00D90928 /* GlimpUITestsLaunchTests.swift */,
+			);
+			path = GlimpUITests;
+			sourceTree = "<group>";
+		};
+		7ACEBD682A3E0E5C00D90928 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD692A3E0E7600D90928 /* APIManager.swift */,
+				7ACEBD6C2A3E0E7600D90928 /* Endpoints.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		7ACEBD712A3E0EAD00D90928 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD722A3E0F1A00D90928 /* Channel.swift */,
+				7ACEBD742A3E0F5100D90928 /* Program.swift */,
+				7AC96F872A42E53900DF0E4C /* SectionDataModel.swift */,
+				7AC96F892A42E55000DF0E4C /* RowDataModel.swift */,
+				7AC96F8B2A42E57F00DF0E4C /* HeaderSlotDataModel.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		7ACEBD762A3E0FFB00D90928 /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD8C2A3F1D1900D90928 /* Cell */,
+				7ACEBD802A3E10BA00D90928 /* View */,
+				7ACEBD7A2A3E103400D90928 /* Interactor */,
+				7ACEBD772A3E100700D90928 /* Presenter */,
+				7ACEBD712A3E0EAD00D90928 /* Entity */,
+				7ACEBD7F2A3E10A800D90928 /* Router */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		7ACEBD772A3E100700D90928 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD7B2A3E105B00D90928 /* HomePresenter.swift */,
+				7ACEBD852A3E12E800D90928 /* HomePresenterInOut.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		7ACEBD7A2A3E103400D90928 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD782A3E102C00D90928 /* HomeInteractor.swift */,
+				7ACEBD832A3E12BE00D90928 /* HomeInteractorInOut.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		7ACEBD7F2A3E10A800D90928 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD7D2A3E109E00D90928 /* HomeRouter.swift */,
+				7AC96F902A42E8A400DF0E4C /* HomeRouterInOut.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		7ACEBD802A3E10BA00D90928 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD812A3E10D300D90928 /* HomeViewController.swift */,
+				7ACEBD872A3E131300D90928 /* HomeViewInOut.swift */,
+				7ACEBD912A403E1E00D90928 /* CustomCollectionFlowLayout */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7ACEBD892A3E153D00D90928 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD8A2A3E155500D90928 /* HomeService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		7ACEBD8C2A3F1D1900D90928 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				7ACEBD8F2A3F1D5700D90928 /* TimeCollectionViewCell.swift */,
+				7AC96F852A414F4800DF0E4C /* ProgramCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		7ACEBD912A403E1E00D90928 /* CustomCollectionFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				7AC96F922A42EDD600DF0E4C /* CustomCollectionViewLayoutPrototcol.swift */,
+				7AC96F942A42EE1200DF0E4C /* CustomCollectionViewLayout.swift */,
+			);
+			path = CustomCollectionFlowLayout;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7ACEBD372A3E08AD00D90928 /* Glimp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACEBD5F2A3E08AE00D90928 /* Build configuration list for PBXNativeTarget "Glimp" */;
+			buildPhases = (
+				7ACEBD342A3E08AD00D90928 /* Sources */,
+				7ACEBD352A3E08AD00D90928 /* Frameworks */,
+				7ACEBD362A3E08AD00D90928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Glimp;
+			productName = Glimp;
+			productReference = 7ACEBD382A3E08AD00D90928 /* Glimp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7ACEBD4A2A3E08AE00D90928 /* GlimpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACEBD622A3E08AE00D90928 /* Build configuration list for PBXNativeTarget "GlimpTests" */;
+			buildPhases = (
+				7ACEBD472A3E08AE00D90928 /* Sources */,
+				7ACEBD482A3E08AE00D90928 /* Frameworks */,
+				7ACEBD492A3E08AE00D90928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACEBD4D2A3E08AE00D90928 /* PBXTargetDependency */,
+			);
+			name = GlimpTests;
+			productName = GlimpTests;
+			productReference = 7ACEBD4B2A3E08AE00D90928 /* GlimpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7ACEBD542A3E08AE00D90928 /* GlimpUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7ACEBD652A3E08AE00D90928 /* Build configuration list for PBXNativeTarget "GlimpUITests" */;
+			buildPhases = (
+				7ACEBD512A3E08AE00D90928 /* Sources */,
+				7ACEBD522A3E08AE00D90928 /* Frameworks */,
+				7ACEBD532A3E08AE00D90928 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7ACEBD572A3E08AE00D90928 /* PBXTargetDependency */,
+			);
+			name = GlimpUITests;
+			productName = GlimpUITests;
+			productReference = 7ACEBD552A3E08AE00D90928 /* GlimpUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7ACEBD302A3E08AD00D90928 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					7ACEBD372A3E08AD00D90928 = {
+						CreatedOnToolsVersion = 14.3;
+					};
+					7ACEBD4A2A3E08AE00D90928 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7ACEBD372A3E08AD00D90928;
+					};
+					7ACEBD542A3E08AE00D90928 = {
+						CreatedOnToolsVersion = 14.3;
+						TestTargetID = 7ACEBD372A3E08AD00D90928;
+					};
+				};
+			};
+			buildConfigurationList = 7ACEBD332A3E08AD00D90928 /* Build configuration list for PBXProject "Glimp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7ACEBD2F2A3E08AD00D90928;
+			productRefGroup = 7ACEBD392A3E08AD00D90928 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7ACEBD372A3E08AD00D90928 /* Glimp */,
+				7ACEBD4A2A3E08AE00D90928 /* GlimpTests */,
+				7ACEBD542A3E08AE00D90928 /* GlimpUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7ACEBD362A3E08AD00D90928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACEBD462A3E08AE00D90928 /* LaunchScreen.storyboard in Resources */,
+				7ACEBD432A3E08AE00D90928 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACEBD492A3E08AE00D90928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACEBD532A3E08AE00D90928 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7ACEBD342A3E08AD00D90928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AC96F932A42EDD600DF0E4C /* CustomCollectionViewLayoutPrototcol.swift in Sources */,
+				7ACEBD8B2A3E155500D90928 /* HomeService.swift in Sources */,
+				7ACEBD752A3E0F5100D90928 /* Program.swift in Sources */,
+				7ACEBD732A3E0F1A00D90928 /* Channel.swift in Sources */,
+				7AC96F842A4145EA00DF0E4C /* UIColor+Extension.swift in Sources */,
+				7ACEBD6D2A3E0E7600D90928 /* APIManager.swift in Sources */,
+				7AC96F882A42E53900DF0E4C /* SectionDataModel.swift in Sources */,
+				7ACEBD862A3E12E800D90928 /* HomePresenterInOut.swift in Sources */,
+				7AC96F912A42E8A400DF0E4C /* HomeRouterInOut.swift in Sources */,
+				7ACEBD7C2A3E105B00D90928 /* HomePresenter.swift in Sources */,
+				7ACEBD842A3E12BE00D90928 /* HomeInteractorInOut.swift in Sources */,
+				7AC96F862A414F4800DF0E4C /* ProgramCollectionViewCell.swift in Sources */,
+				7ACEBD792A3E102C00D90928 /* HomeInteractor.swift in Sources */,
+				7AC96F952A42EE1200DF0E4C /* CustomCollectionViewLayout.swift in Sources */,
+				7ACEBD882A3E131300D90928 /* HomeViewInOut.swift in Sources */,
+				7ACEBD702A3E0E7600D90928 /* Endpoints.swift in Sources */,
+				7AC96F8C2A42E57F00DF0E4C /* HeaderSlotDataModel.swift in Sources */,
+				7ACEBD3C2A3E08AD00D90928 /* AppDelegate.swift in Sources */,
+				7ACEBD902A3F1D5700D90928 /* TimeCollectionViewCell.swift in Sources */,
+				7AC96F8A2A42E55000DF0E4C /* RowDataModel.swift in Sources */,
+				7ACEBD7E2A3E109E00D90928 /* HomeRouter.swift in Sources */,
+				7ACEBD822A3E10D300D90928 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACEBD472A3E08AE00D90928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACEBD502A3E08AE00D90928 /* GlimpTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7ACEBD512A3E08AE00D90928 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7ACEBD5C2A3E08AE00D90928 /* GlimpUITestsLaunchTests.swift in Sources */,
+				7ACEBD5A2A3E08AE00D90928 /* GlimpUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7ACEBD4D2A3E08AE00D90928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACEBD372A3E08AD00D90928 /* Glimp */;
+			targetProxy = 7ACEBD4C2A3E08AE00D90928 /* PBXContainerItemProxy */;
+		};
+		7ACEBD572A3E08AE00D90928 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7ACEBD372A3E08AD00D90928 /* Glimp */;
+			targetProxy = 7ACEBD562A3E08AE00D90928 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7ACEBD442A3E08AE00D90928 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7ACEBD452A3E08AE00D90928 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7ACEBD5D2A3E08AE00D90928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		7ACEBD5E2A3E08AE00D90928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = appletvos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7ACEBD602A3E08AE00D90928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vmedia.Glimp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Debug;
+		};
+		7ACEBD612A3E08AE00D90928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Automatic;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vmedia.Glimp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+			};
+			name = Release;
+		};
+		7ACEBD632A3E08AE00D90928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vmedia.GlimpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glimp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Glimp";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Debug;
+		};
+		7ACEBD642A3E08AE00D90928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vmedia.GlimpTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Glimp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Glimp";
+				TVOS_DEPLOYMENT_TARGET = 16.4;
+			};
+			name = Release;
+		};
+		7ACEBD662A3E08AE00D90928 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vmedia.GlimpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = Glimp;
+			};
+			name = Debug;
+		};
+		7ACEBD672A3E08AE00D90928 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vmedia.GlimpUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TEST_TARGET_NAME = Glimp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7ACEBD332A3E08AD00D90928 /* Build configuration list for PBXProject "Glimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACEBD5D2A3E08AE00D90928 /* Debug */,
+				7ACEBD5E2A3E08AE00D90928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACEBD5F2A3E08AE00D90928 /* Build configuration list for PBXNativeTarget "Glimp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACEBD602A3E08AE00D90928 /* Debug */,
+				7ACEBD612A3E08AE00D90928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACEBD622A3E08AE00D90928 /* Build configuration list for PBXNativeTarget "GlimpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACEBD632A3E08AE00D90928 /* Debug */,
+				7ACEBD642A3E08AE00D90928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7ACEBD652A3E08AE00D90928 /* Build configuration list for PBXNativeTarget "GlimpUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7ACEBD662A3E08AE00D90928 /* Debug */,
+				7ACEBD672A3E08AE00D90928 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7ACEBD302A3E08AD00D90928 /* Project object */;
+}
